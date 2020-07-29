@@ -68,7 +68,7 @@ address {
   line-height: 1.71;
   color: var(--secondary-color);
 }
-section {
+section:not(:first-child) {
   padding-bottom: 94px;
   padding-top: 94px;
 }
@@ -156,11 +156,22 @@ nav {
 /* Main index.html */
 /* Hero */
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: #cccccc;
   text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url('../images/main/hero_bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero h1 {
   margin-bottom: 30px;
@@ -325,6 +336,7 @@ nav {
 .portfolio-filter-button:hover {
   color: var(--secondary-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 /* Works */
 .works {
