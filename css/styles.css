@@ -280,11 +280,12 @@ nav {
 .team .items {
   display: flex;
 }
-.team .item {
+.team .teammate-card {
+  padding-bottom: 24px;
   background-color: var(--secondary-color);
   border-radius: 0 0 4px 4px;
 }
-.team .item:not(:first-child) {
+.team .teammate-card:not(:first-child) {
   margin-left: 30px;
 }
 .team h3 {
@@ -304,11 +305,26 @@ nav {
   line-height: 1.2;
   text-align: center;
 }
-.team .social-networks {
+.social-networks {
   display: flex;
   justify-content: center;
 }
-.team .social-networks .item:not(:first-child) {
+.social-networks .item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  fill: currentColor;
+}
+.social-networks a:hover,
+.social-networks a:focus {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+  fill: var(--secondary-color);
+}
+.social-networks .item:not(:first-child) {
   margin-left: 10px;
 }
 /* Our clients */
@@ -324,6 +340,21 @@ nav {
 .clients .items {
   display: flex;
   justify-content: center;
+}
+.clients .items a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 170px;
+  min-height: 90px;
+  fill: var(--primary-text-color);
+  border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
+}
+.clients .items a:hover,
+.clients .items a:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 .clients .item:not(:first-child) {
   margin-left: 30px;
@@ -355,7 +386,8 @@ nav {
 .portfolio-filter li:not(:first-child) {
   margin-left: 8px;
 }
-.portfolio-filter-button:hover {
+.portfolio-filter-button:hover,
+.portfolio-filter-button:focus {
   color: var(--secondary-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -420,7 +452,20 @@ footer {
   display: block;
   margin-top: 9px;
 }
+.footer .social-networks {
+  display: flex;
+  flex-direction: column;
+}
 /* Social-networks */
+.footer .social-networks a {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--secondary-color);
+}
+.footer .social-networks a:hover,
+.footer .social-networks a:focus {
+  background-color: var(--accent-color);
+}
+
 .footer .social-networks p {
   font-weight: 700;
   font-size: 14px;
