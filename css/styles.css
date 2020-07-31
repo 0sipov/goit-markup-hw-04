@@ -1,6 +1,6 @@
 /* Colors
-primery title text(black)      #212121
-primery text(grey)             #757575
+primary title text(black)      #212121
+primary text(grey)             #757575
 white                          #FFFFFF
 black                          #000000
 accent(blue)                   #2196F3
@@ -8,7 +8,7 @@ grey color                     #F5F4FA
 transparent white              255, 255, 255, 0.6
  */
 :root {
-  --primery-title-text-color: #212121;
+  --primary-title-text-color: #212121;
   --primary-text-color: #757575;
   --accent-color: #2196f3;
   --secondary-color: #ffffff;
@@ -38,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--primery-title-text-color);
+  color: var(--primary-title-text-color);
   margin: 0;
 }
 h2 {
@@ -69,18 +69,15 @@ address {
   color: var(--secondary-color);
 }
 section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding: 94px 0;
 }
 
 /* Utilities */
 .container {
-  /* outline: 2px solid red; */
+  margin: 0 auto;
+  padding: 0 15px;
+
   width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 /* Header */
 header > .container {
@@ -89,7 +86,6 @@ header > .container {
 }
 /* Logo */
 .logo {
-  /* background-color: blue; */
   color: var(--black-color);
   font-family: Raleway, sans-serif;
   font-weight: bold;
@@ -101,29 +97,26 @@ header > .container {
 }
 /* Site navigation */
 nav {
-  /* outline: 2px solid red; */
   display: flex;
   align-items: center;
 }
 .site-nav {
-  display: flex;
   margin-left: 85px;
+
+  display: flex;
 }
 .site-nav > li {
-  /* background-color: blue; */
-  /* outline: 2px solid red; */
   margin-left: 50px;
 }
 .site-nav > li:first-child {
   margin-left: 0;
 }
 .site-nav a {
-  display: block;
   margin: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 0;
 
-  color: var(--primery-title-text-color);
+  display: block;
+  color: var(--primary-title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -173,14 +166,11 @@ nav {
 /* Main index.html */
 /* Hero */
 .hero {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  margin: 0 auto;
+  padding: 200px 0;
 
   text-align: center;
   max-width: 1600px;
-  /* height: 600px; */
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
@@ -202,10 +192,7 @@ nav {
   text-transform: uppercase;
 }
 .hero a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 10px 32px;
 
   display: inline-block;
   color: var(--secondary-color);
@@ -226,7 +213,6 @@ nav {
 }
 .advantages .background-item {
   margin-bottom: 30px;
-  /* padding: 25px 100px; */
 
   display: flex;
   justify-content: center;
@@ -282,6 +268,7 @@ nav {
 }
 .team .teammate-card {
   padding-bottom: 24px;
+
   background-color: var(--secondary-color);
   border-radius: 0 0 4px 4px;
 }
@@ -375,7 +362,7 @@ nav {
   border: none;
   border-radius: 4px;
   background-color: var(--grey-color);
-  color: var(--primery-title-text-color);
+  color: var(--primary-title-text-color);
   font-family: Roboto;
   font-style: 400;
   font-weight: 500;
@@ -407,10 +394,7 @@ nav {
   margin-top: 30px;
 }
 .portfolio h2 {
-  margin-top: 20px;
-  margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 20px 24px 4px;
 
   text-align: left;
   font-weight: 700;
@@ -419,8 +403,7 @@ nav {
   letter-spacing: 0.06em;
 }
 .portfolio-project-type {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin: 0 24px;
 
   font-size: 16px;
   line-height: 1.9;
@@ -435,8 +418,7 @@ footer {
   background-color: #2f303a;
 }
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 
   display: flex;
 }
@@ -449,8 +431,9 @@ footer {
   color: var(--secondary-color);
 }
 .footer .mail-tel {
-  display: block;
   margin-top: 9px;
+
+  display: block;
 }
 .footer .social-networks {
   display: flex;
@@ -467,12 +450,13 @@ footer {
 }
 
 .footer .social-networks p {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-color);
-  margin-bottom: 20px;
 }
 .footer .social-networks .items {
   display: flex;
