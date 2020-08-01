@@ -269,10 +269,10 @@ nav {
 
   background-color: var(--secondary-color);
   border-radius: 0 0 4px 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .team .teammate-card:not(:first-child) {
   margin-left: 30px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .team h3 {
   margin-top: 30px;
