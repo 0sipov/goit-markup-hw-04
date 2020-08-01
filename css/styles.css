@@ -68,6 +68,9 @@ address {
   line-height: 1.71;
   color: var(--secondary-color);
 }
+img {
+  display: block;
+}
 section {
   padding: 94px 0;
 }
@@ -269,6 +272,7 @@ nav {
 }
 .team .teammate-card:not(:first-child) {
   margin-left: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .team h3 {
   margin-top: 30px;
@@ -378,17 +382,23 @@ nav {
   display: flex;
   flex-wrap: wrap;
 }
-.works .item {
-  padding-bottom: 20px;
-}
 .works .item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 .works .item:not(:nth-child(-n + 3)) {
   margin-top: 30px;
 }
+.works .item:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.works .item-title {
+  padding: 20px 24px;
+
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
 .portfolio h2 {
-  margin: 20px 24px 4px;
+  margin: 0 0 4px;
 
   text-align: left;
   font-weight: 700;
@@ -397,8 +407,6 @@ nav {
   letter-spacing: 0.06em;
 }
 .portfolio-project-type {
-  margin: 0 24px;
-
   font-size: 16px;
   line-height: 1.9;
 }
