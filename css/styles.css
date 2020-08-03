@@ -192,13 +192,16 @@ nav {
   text-transform: uppercase;
 }
 .hero a {
-  padding: 10px 32px;
+  margin: auto;
+  padding: 20px 32px;
 
   display: inline-block;
   color: var(--secondary-color);
   background-color: var(--accent-color);
   letter-spacing: 0.06em;
   border-radius: 4px;
+  min-width: 200px;
+  min-height: 50px;
 }
 /* Our advantages */
 
@@ -375,6 +378,7 @@ nav {
 .portfolio-filter-button:focus {
   color: var(--secondary-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 /* Works */
@@ -430,6 +434,7 @@ footer {
   margin-right: 69px;
 }
 .footer .logo {
+  display: block;
   margin-bottom: 20px;
   color: var(--secondary-color);
 }
